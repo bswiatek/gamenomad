@@ -1,0 +1,17 @@
+<br /><br />
+<div id="view-content">
+	<p>View script for controller <b>About</b> and script/action name <b>contact</b></p>
+	<p>Jason owns 14 games, and <?= $this->Gender("m"); ?> is currently playing Call of Duty</p>
+	
+	
+	<ul id="hottest">
+	<?= $this->partialLoop('_hottestgame.phtml',
+		array(
+		array('asin' => 'B000TG530M', 'title' => '<li>Call of Duty 4</li>'),
+		array('asin' => 'B000FRU1UM', 'title' => '<li>Grand Theft Auto</li>'),
+		array('asin' => 'B000FRU0NU', 'title' => '<li>Halo 3</li>')
+				)
+		)
+	?>
+	</ul>
+</div>

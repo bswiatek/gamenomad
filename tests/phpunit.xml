@@ -1,0 +1,6 @@
+<phpunit bootstrap="bootstrap.php" colors="true" stopOnError="false" stopOnFailure="false" verbose="true">
+    <testsuite name="Aa3">
+        <directory suffix="Test.php">application/</directory>
+        <directory suffix="Test.php">library/Test/</directory>
+    </testsuite>
+</phpunit>
